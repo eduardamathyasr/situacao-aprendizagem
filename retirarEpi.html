@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Retirada de EPI</title>
+    <link rel="stylesheet" href="stylel.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registrar Retirada de EPI</h1>
+        <form id="form-retirar-epi">
+            <div class="form-group">
+                <label for="epiId">ID do EPI:</label>
+                <input type="text" id="epiId" name="epiId" readonly>
+            </div>
+            <div class="form-group">
+                <label for="funcionario">Funcionário:</label>
+                <input type="text" id="funcionario" name="funcionario" placeholder="Nome do Funcionário">
+            </div>
+            <div class="form-group">
+                <label for="dataRetirada">Data da Retirada:</label>
+                <input type="date" id="dataRetirada" name="dataRetirada">
+            </div>
+
+            <button type="button" onclick="registrarRetirada()">Registrar Retirada</button>
+
+            <h2>Histórico de Retiradas</h2>
+            <div class="historico-list" id="historicoList"></div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

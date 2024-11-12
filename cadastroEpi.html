@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleCadastro.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastro EPI</h1>
+        <form id="formEpi" onsubmit="cadastrarEpi(); return false;">
+            <input type="text" id="nome" placeholder="Nome do EPI" required>
+            <input type="text" id="tipo" placeholder="Tipo do EPI" required>
+            <input type="date" id="dataValidade" required>
+            <input type="text" id="numeroCA" placeholder="Número CA" required>
+            <label>
+                <select id="status" name="status">
+                    <option value="Qualificado">Qualificado</option>
+                    <option value="Desgastado">Desgastado</option>
+                    <option value="Manutenção">Manutenção</option>
+                    <option value="Expirado">Expirado</option>
+                </select>
+            </label>
+
+            <button type="submit">Cadastrar EPI</button>
+        </form>
+
+        <button id="cadastroFuncionarioBtn">Cadastrar Funcionário</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
